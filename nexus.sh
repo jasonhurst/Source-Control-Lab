@@ -1,12 +1,6 @@
-sudo cp /vagrant/hostnames/hosts /etc/hosts
-if [[ "$(ping -c 1 ca.cie.unclass.mil > /dev/null ; echo $?)" == 0 ]];
-then
-    sudo curl -o /etc/pki/ca-trust/source/anchors/myCA.pem --insecure --user vagrant:vagrant scp://ca.cie.unclass.mil/home/vagrant/myCA.pem
-    sudo update-ca-trust extract
-fi
 sudo yum -y install java-1.8.0-openjdk
-sudo wget -q --user "${USERNAME}" --password "${PASSWORD}" "https://nexus.di2e.net/nexus/content/repositories/Private_AFDCGSCICD_Releases/content/repositories/Releases/CIE/nexus/nexus-3.13.0-01-unix.tar.gz"
-sudo tar xvzf nexus-3.13.0-01-unix.tar.gz -C /opt
+sudo wget -q http://download.sonatype.com/nexus/3/nexus-3.16.1-02-unix.tar.gz
+sudo tar xvzf nexus-3.16.0-02-unix.tar.gz -C /opt
 
 echo "[Unit]
 Description=nexus service
