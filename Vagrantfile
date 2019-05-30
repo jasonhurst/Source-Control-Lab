@@ -34,6 +34,15 @@ servers=[
     :cpu => 2,
     :hport => 8084,
     :gport => 8081
+  },
+  {
+    :hostname => "linuxclient",
+    :ip => "192.168.100.12",
+    :box => "bento/centos-7.3",
+    :ram => 1024,
+    :cpu => 2,
+    :hport => 8085,
+    :gport => 8081
   }
 ]
 
