@@ -10,7 +10,7 @@
 servers=[
   {
     :hostname => "gitlab",
-    :ip => "192.168.100.10",
+    :ip => "192.168.100.11",
     :box => "bento/centos-7.3",
     :ram => 2048,
     :cpu => 2,
@@ -19,7 +19,7 @@ servers=[
   },
   {
     :hostname => "nexus",
-    :ip => "192.168.100.11",
+    :ip => "192.168.100.12",
     :box => "bento/centos-7.3",
     :ram => 2048,
     :cpu => 2,
@@ -28,21 +28,21 @@ servers=[
   },
   {
     :hostname => "svn",
-    :ip => "192.168.100.12",
+    :ip => "192.168.100.27",
     :box => "bento/centos-7.3",
     :ram => 2048,
     :cpu => 2,
-    :hport => 8084,
+    :hport => 8098,
     :gport => 8081
   },
   {
     :hostname => "linuxclient",
-    :ip => "192.168.100.12",
+    :ip => "192.168.100.17",
     :box => "bento/centos-7.3",
     :ram => 1024,
     :cpu => 2,
-    :hport => 8085,
-    :gport => 8081
+    :hport => 8088,
+    :gport => 8080
   }
 ]
 
